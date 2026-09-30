@@ -17,3 +17,6 @@ Mini Hotel is a daily-rate room rental at vul. Ivana Vyhovskoho, 42B in Kamianet
 
 ## Notes
 The page explicitly states that room categories, capacity, pricing, bathroom type, Wi-Fi, kitchen, parking, air conditioning, check-in/check-out times, and rules for children and pets are not published and should be confirmed by phone.
+
+## Forms
+Live form posting to HotelOS (`kp-minihotel`): `stay-request` (after the availability/contact block; the former "Підготувати текст запиту" buttons now link to it).

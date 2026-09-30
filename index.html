@@ -34,21 +34,24 @@
     footer{background:#202426;color:#d6d9d8;padding:55px 0 90px}.footer-in{display:flex;justify-content:space-between;gap:35px}.footer-brand strong{display:block;font-size:1.2rem;letter-spacing:.1em}.footer-brand small{color:#90999a}.footer-links{display:flex;gap:30px;color:#aeb5b5}.mobile-sticky{display:none}
     @media(max-width:900px){.nav,.header-in>.phone,.header-in>.btn{display:none}.menu{display:block}.nav.open{display:flex;position:absolute;top:72px;left:0;right:0;background:var(--paper);padding:22px;flex-direction:column;border-bottom:1px solid var(--line)}.hero{grid-template-columns:1fr}.hero-copy{min-height:620px}.hero-photo{height:580px}.about-grid,.booking-grid,.location-grid,.contacts{grid-template-columns:1fr}.room-grid{grid-template-columns:1fr 1fr}.room img{height:370px}.location-grid{gap:30px}.footer-in{flex-direction:column}}
     @media(max-width:560px){body{padding-bottom:68px}.wrap{width:calc(100% - 28px)}.section{padding:68px 0}.hero-copy{padding:50px 20px;min-height:640px}.hero h1{font-size:4.3rem}.hero-photo{height:400px}.facts-grid{grid-template-columns:1fr}.fact{padding:19px 14px;border-right:0;border-bottom:1px dashed rgba(255,255,255,.25)}.facts .wrap{width:100%}.rooms-head{display:block}.room-grid{grid-template-columns:1fr}.room img{height:300px}.stay-types{grid-template-columns:1fr}.booking-card{padding:23px}.footer-links{flex-wrap:wrap}.mobile-sticky{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;background:white;padding:9px;gap:8px;z-index:30;border-top:1px solid var(--line)}.mobile-sticky a{text-align:center;padding:11px;border-radius:7px;font-weight:850}.mobile-sticky a:first-child{background:var(--blue);color:white}.mobile-sticky a:last-child{background:var(--blue2);color:var(--blue)}}
+    .request{background:white}.request-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}.request-phone{display:inline-block;margin-top:18px;font-size:clamp(1.5rem,3vw,2.3rem);font-weight:900;color:var(--blue)}.request-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 14px;padding:32px;border:1px solid var(--line);border-radius:12px;background:var(--paper);box-shadow:12px 12px 0 var(--blue2)}.field{display:grid;gap:6px;align-content:start;min-width:0;font-size:.85rem;font-weight:750}.field.full{grid-column:1/-1}.field small{font-weight:400;color:var(--muted)}.field input,.field select,.field textarea{width:100%;max-width:100%;min-width:0;min-height:48px;padding:11px 14px;border:1px solid #c4c2bb;border-radius:8px;background:white;color:var(--ink);font:inherit;font-weight:400}.field textarea{min-height:110px;resize:vertical}.field textarea:focus-visible{outline:3px solid #e3a84b;outline-offset:3px}.field [aria-invalid=true]{border-color:#b3261e;box-shadow:0 0 0 1px #b3261e}[data-error-for]{font-weight:600;color:#b3261e}[data-error-for]:empty{display:none}.trap{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.request-foot{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:16px}.request-foot .btn{min-height:48px;font-weight:750}.request-foot .btn[disabled]{opacity:.6;cursor:wait;transform:none}.request-note{flex:1;min-width:200px;margin:0;font-size:.82rem;color:var(--muted)}[data-status]{grid-column:1/-1;margin:0;padding:14px 16px;border-left:4px solid var(--blue);border-radius:8px;background:var(--blue2)}[data-status]:empty{display:none}[data-status][data-state=error]{border-color:#b3261e;background:#fbeae8}[data-status] a{font-weight:850;text-decoration:underline}
+    @media(max-width:900px){.request-grid{grid-template-columns:1fr;gap:30px}}@media(max-width:560px){.request-form{grid-template-columns:minmax(0,1fr);padding:22px 16px;box-shadow:none}}
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"LodgingBusiness","name":"Міні готель","image":"https://minihotel.webart.work/images/room-main.jpg","address":{"@type":"PostalAddress","streetAddress":"вул. Івана Виговського, 42Б","addressLocality":"Кам’янець-Подільський","addressCountry":"UA"},"telephone":"+380683009008","url":"https://minihotel.webart.work/"}</script>
 </head>
 <body>
-  <header><div class="wrap header-in"><a class="brand" href="#top">МІНІ ГОТЕЛЬ</a><nav id="nav" class="nav" aria-label="Головна навігація"><a href="#rooms">Кімнати</a><a href="#conditions">Умови</a><a href="#gallery">Галерея</a><a href="#contacts">Контакти</a></nav><a class="phone" href="tel:+380683009008">+38 068 300 90 08</a><a class="btn primary" href="#availability">Вільна кімната?</a><button class="menu" aria-controls="nav" aria-expanded="false" aria-label="Відкрити меню">Меню</button></div></header>
+  <header><div class="wrap header-in"><a class="brand" href="#top">МІНІ ГОТЕЛЬ</a><nav id="nav" class="nav" aria-label="Головна навігація"><a href="#rooms">Кімнати</a><a href="#conditions">Умови</a><a href="#gallery">Галерея</a><a href="#contacts">Контакти</a></nav><a class="phone" href="tel:+380683009008">+38 068 300 90 08</a><a class="btn primary" href="#stay-request">Вільна кімната?</a><button class="menu" aria-controls="nav" aria-expanded="false" aria-label="Відкрити меню">Меню</button></div></header>
   <main id="top">
-    <section class="hero"><div class="hero-copy"><div><span class="eyebrow">Подобова оренда · Кам’янець-Подільський</span><h1>Міні готель<span>Кімната на день, на вихідні або на кілька ночей</span></h1><p>Подобова оренда кімнат у Кам’янці-Подільському.</p><div class="actions"><a class="btn primary" href="tel:+380683009008">Зателефонувати: +38 068 300 90 08</a><a class="btn" href="#availability">Підготувати текст запиту</a></div><div class="hero-address"><strong>вул. Івана Виговського, 42Б</strong><small>У джерелі також зазначена стара назва, вул. Матросова</small><a href="https://maps.app.goo.gl/rjKptyMbsW9zqgPX8" target="_blank" rel="noopener">Показати на карті →</a></div></div></div><div class="hero-photo"><img src="images/room-twin.jpg" alt="Проста світла кімната з окремими ліжками, ілюстративне зображення"><span class="image-note">Ілюстративне зображення</span></div></section>
+    <section class="hero"><div class="hero-copy"><div><span class="eyebrow">Подобова оренда · Кам’янець-Подільський</span><h1>Міні готель<span>Кімната на день, на вихідні або на кілька ночей</span></h1><p>Подобова оренда кімнат у Кам’янці-Подільському.</p><div class="actions"><a class="btn primary" href="tel:+380683009008">Зателефонувати: +38 068 300 90 08</a><a class="btn" href="#stay-request">Залишити запит</a></div><div class="hero-address"><strong>вул. Івана Виговського, 42Б</strong><small>У джерелі також зазначена стара назва, вул. Матросова</small><a href="https://maps.app.goo.gl/rjKptyMbsW9zqgPX8" target="_blank" rel="noopener">Показати на карті →</a></div></div></div><div class="hero-photo"><img src="images/room-twin.jpg" alt="Проста світла кімната з окремими ліжками, ілюстративне зображення"><span class="image-note">Ілюстративне зображення</span></div></section>
     <section class="facts"><div class="wrap facts-grid"><div class="fact"><b>ПОДОБОВО</b><span>Подобова оренда</span></div><div class="fact"><b>КАМ’ЯНЕЦЬ-ПОДІЛЬСЬКИЙ</b><span>У межах міста</span></div><div class="fact"><b>ПРЯМИЙ КОНТАКТ</b><span>Бронювання телефоном</span></div></div></section>
     <section class="section"><div class="wrap about-grid"><div><span class="eyebrow">Просто й по суті</span><h2>Простий формат проживання</h2><p class="lead">Якщо вам потрібне місце для короткої зупинки, weekend або кількох ночей, уточніть доступність кімнат безпосередньо за телефоном.</p><a class="btn primary" href="tel:+380683009008">Зателефонувати</a></div><aside class="formula" aria-label="Як забронювати"><div class="steps"><div class="step"><i>1</i><div><strong>Оберіть дати</strong><small>Заїзд і виїзд</small></div></div><div class="step"><i>2</i><div><strong>Залиште телефон</strong><small>Для уточнення деталей</small></div></div><div class="step"><i>3</i><div><strong>Підтвердьте дзвінком</strong><small>Наявність і вартість</small></div></div></div></aside></div></section>
     <section class="section rooms" id="rooms"><div class="wrap"><div class="rooms-head"><div><span class="eyebrow">Кімнати</span><h2>Подивіться формат</h2></div><p>Реальні категорії, місткість і ціни потрібно підтвердити у власника. Зображення нижче передають лише загальний настрій простого проживання.</p></div><div class="room-grid" id="gallery"><figure class="room"><img src="images/room-main.jpg" alt="Ілюстративний приклад кімнати з двоспальним ліжком" loading="lazy"><figcaption class="room-tag"><strong>Приклад кімнати</strong><small>Ілюстративне зображення · характеристики уточнюйте</small></figcaption></figure><figure class="room"><img src="images/room-twin.jpg" alt="Ілюстративний приклад кімнати з окремими ліжками" loading="lazy"><figcaption class="room-tag"><strong>Інший формат</strong><small>Ілюстративне зображення · доступність уточнюйте</small></figcaption></figure></div></div></section>
     <section class="section booking" id="availability"><div class="wrap booking-grid"><div><span class="eyebrow">Доступність</span><h2>Зв'яжіться з нами</h2><p class="lead">Зателефонуйте, щоб дізнатися про вільні дати, вартість і умови проживання.</p></div><div class="booking-card" style="text-align:center"><strong style="display:block;font-size:1.2rem;margin-bottom:10px">МІНІ ГОТЕЛЬ</strong><a class="big" style="display:block;font-size:clamp(1.8rem,4vw,3.2rem);font-weight:900;color:var(--blue);margin:15px 0" href="tel:+380683009008">+38 068 300 90 08</a><p>вул. Івана Виговського, 42Б, Кам’янець-Подільський</p><a class="btn primary" href="https://maps.app.goo.gl/rjKptyMbsW9zqgPX8" target="_blank" rel="noopener">Відкрити в Google Maps</a></div></div></section>
+    <section class="section request" id="stay-request"><div class="wrap request-grid"><div><span class="eyebrow">Запит на кімнату</span><h2>Залиште номер, ми передзвонимо</h2><p class="lead">Вкажіть телефон і, за бажанням, дати та кількість гостей. Ми зателефонуємо, щоб підтвердити вільні дати, вартість і умови.</p><a class="request-phone" href="tel:+380683009008">+38 068 300 90 08</a></div><form class="request-form" data-hotelos data-form-name="Запит на проживання" novalidate><label class="field full">Телефон<small>Обов’язково, щоб ми могли передзвонити</small><input name="phone" type="tel" autocomplete="tel" inputmode="tel" required><span data-error-for="phone"></span></label><label class="field">Ім’я<input name="name" type="text" autocomplete="name" maxlength="200"></label><label class="field">Гостей<input name="guests" type="number" min="1" max="50" inputmode="numeric"></label><label class="field">Дата заїзду<input name="checkIn" type="date"></label><label class="field">Дата виїзду<input name="checkOut" type="date"><span data-error-for="checkOut"></span></label><label class="field full">Побажання<textarea name="message" maxlength="5000"></textarea></label><label class="trap" aria-hidden="true">Не заповнюйте<input name="website" type="text" tabindex="-1" autocomplete="off"></label><div class="request-foot"><button class="btn primary" type="submit">Надіслати запит</button><p class="request-note">Номер використаємо лише для відповіді на цей запит.</p></div><p data-status role="status" aria-live="polite"></p></form></div></section>
     <section class="section" id="conditions"><div class="wrap"><span class="eyebrow">Варіанти зупинки</span><h2>На потрібну кількість днів</h2><div class="stay-types"><article class="stay-type"><b>На одну ніч?</b><p>Місце після дороги чи насиченого дня у Кам’янці.</p></article><article class="stay-type"><b>На вихідні?</b><p>Кілька ночей і зручна база для вашої подорожі.</p></article><article class="stay-type"><b>На кілька днів?</b><p>Умови та доступність уточніть безпосередньо у власника.</p></article></div><p class="lead" style="margin-top:35px">Вартість, санвузол, Wi‑Fi, кухня, паркування, кондиціонер, час заїзду й виїзду та правила для дітей і тварин уточнюйте одним дзвінком.</p></div></section>
     <section class="section location"><div class="wrap location-grid"><div><span class="eyebrow">Кам’янець-Подільський</span><h2>Знайти просто</h2><p>Без неперевірених обіцянок про відстані: відкрийте адресу у своїй навігації та побудуйте актуальний маршрут.</p></div><div class="address-ticket"><span class="eyebrow">Адреса</span><h3>вул. Івана Виговського, 42Б</h3><small>Колишня назва, вул. Матросова</small><a href="https://maps.app.goo.gl/rjKptyMbsW9zqgPX8" target="_blank" rel="noopener">Відкрити в Google Maps ↗</a></div></div></section>
     <section class="section" id="contacts"><div class="wrap contacts"><div><span class="eyebrow">Контакти</span><h2>Один прямий номер</h2><p class="lead">Запитайте про кімнату, потрібні дати, вартість і умови проживання.</p></div><div class="contact-box"><strong>МІНІ ГОТЕЛЬ</strong><a class="big" href="tel:+380683009008">+38 068 300 90 08</a><dl><dt>Адреса</dt><dd>вул. Івана Виговського, 42Б</dd><dt>Email / сайт / Instagram</dt><dd>Не підтверджено</dd><dt>Графік</dt><dd>Уточніть телефоном</dd></dl></div></div></section>
-    <section class="final"><img src="images/room-main.jpg" alt="Ілюстративне зображення простої готельної кімнати" loading="lazy"><div><span class="eyebrow" style="color:#c8dcf2">Кімната. Потрібні дати. Один дзвінок.</span><h2>Потрібна кімната у Кам’янці?</h2><p>Зателефонуйте, щоб дізнатися про вільні дати.</p><div class="actions"><a class="btn primary" href="tel:+380683009008">Зателефонувати</a><a class="btn" href="#availability">Підготувати текст запиту</a></div></div></section>
+    <section class="final"><img src="images/room-main.jpg" alt="Ілюстративне зображення простої готельної кімнати" loading="lazy"><div><span class="eyebrow" style="color:#c8dcf2">Кімната. Потрібні дати. Один дзвінок.</span><h2>Потрібна кімната у Кам’янці?</h2><p>Зателефонуйте, щоб дізнатися про вільні дати.</p><div class="actions"><a class="btn primary" href="tel:+380683009008">Зателефонувати</a><a class="btn" href="#stay-request">Залишити запит</a></div></div></section>
   </main>
   <footer><div class="wrap footer-in"><div class="footer-brand"><strong>МІНІ ГОТЕЛЬ</strong><small>Подобова оренда кімнат</small></div><div class="footer-links"><a href="#rooms">Кімнати</a><a href="#availability">Бронювання</a><a href="#gallery">Галерея</a><a href="#contacts">Контакти</a></div></div></footer>
   <div class="mobile-sticky"><a href="tel:+380683009008">Подзвонити</a><a href="https://maps.app.goo.gl/rjKptyMbsW9zqgPX8" target="_blank" rel="noopener">Карта</a></div>
@@ -57,6 +60,153 @@
     menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open);menu.setAttribute('aria-label',open?'Закрити меню':'Відкрити меню');menu.textContent=open?'Закрити':'Меню'});
     nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Відкрити меню');menu.textContent='Меню'}));
     document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Відкрити меню');menu.textContent='Меню';menu.focus()}});
+  </script>
+  <script type="module">
+// HotelOS site forms. Paste this whole block into the site's index.html as an inline module
+// script right before the closing body tag, and set the three constants below. Never put a
+// literal closing script tag inside this file: it would end the inline script early.
+// Contract (hotelos.webart.work/CRM.md → Submission data contract, firestore.rules):
+// - every form is <form data-hotelos data-form-name="…" novalidate> inside a <section id="{formId}">;
+//   the section id IS the formId (stable slug, e.g. stay-request, sauna-request) and the CRM
+//   links to SITE + '#' + formId, so the link scrolls to the start of that section;
+// - fields are matched by name: phone (required), name, email, message, checkIn, checkOut, guests,
+//   roomType, date, time, service; a [data-genders] box renders one select per guest (hostels);
+// - errors go to [data-error-for="<name>"], the result to [data-status]; `website` is a honeypot.
+const HOTEL_ID = 'kp-minihotel'; // Firestore hotels/{id}: 'kp-' + site folder name
+const SITE = 'https://minihotel.webart.work/'; // from the site's CNAME
+const PHONE = '+38 068 300 90 08'; // shown when sending fails
+
+const FIREBASE = {
+	apiKey: 'AIzaSyBeSB5EuC4BBSpmCGA3Pjk7dD_JV2SdcSQ',
+	authDomain: 'hotel-upwork.firebaseapp.com',
+	projectId: 'hotel-upwork',
+	appId: '1:40129364672:web:c9659550ebf0f1d8a36325',
+};
+const SDK = 'https://www.gstatic.com/firebasejs/12.19.0/';
+const TEXT_FIELDS = ['name', 'email', 'message', 'checkIn', 'checkOut', 'date', 'time', 'roomType', 'service'];
+const today = new Date(Date.now() - new Date().getTimezoneOffset() * 6e4).toISOString().slice(0, 10);
+
+let db;
+async function firestore() {
+	if (db) return db;
+	// Loaded on first submit only, so the page itself stays light.
+	const [{ initializeApp }, lite] = await Promise.all([import(SDK + 'firebase-app.js'), import(SDK + 'firebase-firestore-lite.js')]);
+	db = { lite, store: lite.getFirestore(initializeApp(FIREBASE)) };
+	return db;
+}
+
+function setup(form) {
+	const formId = form.closest('section[id]')?.id;
+	if (!formId) return console.error('HotelOS form needs a parent <section id="formId">', form);
+	const field = (name) => form.elements.namedItem(name);
+	const statusEl = form.querySelector('[data-status]');
+	const submit = form.querySelector('[type=submit]');
+	const submitLabel = submit.textContent;
+	const gendersBox = form.querySelector('[data-genders]');
+
+	for (const name of ['checkIn', 'checkOut', 'date']) if (field(name)) field(name).min = today;
+	if (field('checkIn') && field('checkOut')) {
+		field('checkIn').addEventListener('change', () => {
+			const checkIn = field('checkIn').value;
+			field('checkOut').min = checkIn || today;
+			if (field('checkOut').value && field('checkOut').value <= checkIn) field('checkOut').value = '';
+		});
+	}
+
+	// Hostels: one gender select per guest, kept in sync with the guests count.
+	function renderGenders() {
+		if (!gendersBox) return;
+		const count = Math.min(Math.max(parseInt(field('guests')?.value, 10) || 1, 1), 20);
+		const current = [...gendersBox.querySelectorAll('select')].map((select) => select.value);
+		gendersBox.replaceChildren(
+			...Array.from({ length: count }, (_, i) => {
+				const label = document.createElement('label');
+				label.textContent = `Гість ${i + 1}`;
+				const select = document.createElement('select');
+				select.name = 'gender';
+				select.required = true;
+				select.innerHTML = '<option value="">Стать</option><option value="female">Жінка</option><option value="male">Чоловік</option>';
+				select.value = current[i] ?? '';
+				label.append(select);
+				return label;
+			}),
+		);
+	}
+	if (gendersBox) {
+		field('guests')?.addEventListener('input', renderGenders);
+		renderGenders();
+	}
+
+	function setError(name, text) {
+		const input = field(name);
+		if (input instanceof Element) input.setAttribute('aria-invalid', text ? 'true' : 'false');
+		const slot = form.querySelector(`[data-error-for="${name}"]`);
+		if (slot) slot.textContent = text;
+	}
+
+	function showStatus(state, html) {
+		statusEl.dataset.state = state;
+		statusEl.innerHTML = html;
+	}
+
+	form.addEventListener('submit', async (event) => {
+		event.preventDefault();
+		showStatus('', '');
+		const phone = field('phone').value.trim();
+		const digits = phone.replace(/\D/g, '');
+		setError('phone', digits.length < 9 || digits.length > 15 ? 'Вкажіть номер телефону, щоб ми могли передзвонити.' : '');
+		if (field('checkIn') && field('checkOut')) {
+			const { value: checkIn } = field('checkIn');
+			const { value: checkOut } = field('checkOut');
+			setError('checkOut', checkIn && checkOut && checkOut <= checkIn ? 'Дата виїзду має бути пізніше за дату заїзду.' : '');
+		}
+		const genderSelects = gendersBox ? [...gendersBox.querySelectorAll('select')] : [];
+		if (gendersBox) {
+			const missing = genderSelects.some((select) => !select.value);
+			for (const select of genderSelects) select.setAttribute('aria-invalid', missing && !select.value ? 'true' : 'false');
+			const slot = form.querySelector('[data-error-for="genders"]');
+			if (slot) slot.textContent = missing ? 'Вкажіть стать кожного гостя, щоб ми підібрали місця.' : '';
+		}
+		const invalid = form.querySelector('[aria-invalid=true]');
+		if (invalid) return invalid.focus();
+
+		const thanks = `Дякуємо! Ми зателефонуємо на ${phone.replace(/</g, '')} найближчим часом.`;
+		// Bots fill the hidden field: pretend success, send nothing.
+		if (field('website')?.value) {
+			form.reset();
+			renderGenders();
+			return showStatus('ok', thanks);
+		}
+
+		const lead = { phone, formId, formName: form.dataset.formName, site: SITE, hotelId: HOTEL_ID };
+		for (const name of TEXT_FIELDS) {
+			const value = field(name)?.value?.trim();
+			if (value) lead[name] = value;
+		}
+		const guests = parseInt(field('guests')?.value, 10);
+		if (guests >= 1 && guests <= 50) lead.guests = guests;
+		if (genderSelects.length) lead.genders = genderSelects.map((select) => select.value);
+
+		submit.disabled = true;
+		submit.textContent = 'Надсилаємо…';
+		try {
+			const { lite, store } = await firestore();
+			await lite.addDoc(lite.collection(store, 'submissions'), { ...lead, status: 'new', history: [], createdAt: lite.serverTimestamp() });
+			form.reset();
+			if (field('checkOut')) field('checkOut').min = today;
+			renderGenders();
+			showStatus('ok', thanks);
+		} catch (error) {
+			console.error(error);
+			showStatus('error', `Не вдалося надіслати запит. Зателефонуйте нам: <a href="tel:${PHONE.replace(/[^\d+]/g, '')}">${PHONE}</a>.`);
+		} finally {
+			submit.disabled = false;
+			submit.textContent = submitLabel;
+		}
+	});
+}
+
+document.querySelectorAll('form[data-hotelos]').forEach(setup);
   </script>
 </body>
 </html>
